@@ -1,1 +1,9 @@
+import os
+#The client uses events to make it work
+import discord 
 
+client = discord.Client() #connection to discord ?
+@client.event #this registers an event
+async def on_ready():
+  print('Jia bot is logged in {0.user}'.format(client))
+  #this is called when the bot is ready to start being used
