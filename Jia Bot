@@ -1,4 +1,5 @@
 import os
+import random
 #The client uses events to make it work
 import discord 
 
@@ -12,3 +13,8 @@ async def on_ready():
 async def on_message(message):
   if message.author == client.user:
     return
+  if message.content.startswith("$hello"):
+    await message.channel.send("hello")
+  if message.content.startswith("$play"):
+    rand = random.randint(0, 20)
+    await message.channel.send(rand)
