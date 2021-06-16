@@ -18,5 +18,6 @@ async def on_message(message):
   if message.content.startswith("$play"):
     rand = random.randint(0, 20)
     await message.channel.send(rand)
+    #if the message is 'play' then print a random number
     
 client.run(os.getenv("jiaTOKEN"))
