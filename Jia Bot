@@ -3,6 +3,10 @@ import random
 #The client uses events to make it work
 import discord 
 
+class HashTable:
+  def __init__():
+    
+
 client = discord.Client() #connection to discord ?
 @client.event #this registers an event
 async def on_ready():
