@@ -18,7 +18,10 @@ async def on_message(message):
   if message.author == client.user:
     return
   if message.content.startswith("$hello"):
-    await message.channel.send("hello")
+    if message.author.id == 6335:
+      await message.channel.send("hi jun!")
+    else:
+      await message.channel.send("hello")
   if message.content.startswith("$play"):
     rand = random.randint(0, 20)
     await message.channel.send(rand)
