@@ -2,3 +2,7 @@ array = [[2, 3, 4, 5, 6] , [7, 8, 9, 10, 11]]
 for i in array:
   for y in i:
     print(y, end = " ")
+    
+name = "Tom"
+age = "50"
+print("My name is " + name + " I am " + age + " years old")
