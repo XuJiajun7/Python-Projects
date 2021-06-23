@@ -14,5 +14,11 @@ N = 239853470142824449
 G = 212712880124985346
 C = 263063203892690945
 
+
+players = dict{}
 cashflow = input("enter players and BUY-IN separated by ':' ")
 while cashflow != "":
+  PMtable = cashflow.split(":")
+  players(PMtable[0]) = PMtable[1]
+  cashflow = input("enter players and BUY-IN separated by ':' ")
+  
