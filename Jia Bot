@@ -6,8 +6,8 @@ import discord
 class HashTable:
   def __init__():
     
+client = commands.Bot(command_prefix = "!") 
 
-client = discord.Client() #connection to discord ?
 @client.event #this registers an event
 async def on_ready():
   print('Jia bot is logged in {0.user}'.format(client))
