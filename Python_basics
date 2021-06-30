@@ -29,7 +29,9 @@ temp = random.choice(list(players.values()))
 cashflow = input("enter players and BUY-IN separated by ':' ")
 while cashflow != "":
   for key, value in players.items():
-  PMtable = cashflow.split(":")
-  players(PMtable[0]) = PMtable[1]
-  cashflow = input("enter players and BUY-IN separated by ':' ")
+    if value == temp:
+      
+      PMtable = cashflow.split(":")
+      players(PMtable[0]) = PMtable[1]
+      cashflow = input("enter players and BUY-IN separated by ':' ")
   
