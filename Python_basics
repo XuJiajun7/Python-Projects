@@ -32,6 +32,6 @@ while cashflow != "":
     if value == temp:
       
       PMtable = cashflow.split(":")
-      players(PMtable[0]) = PMtable[1]
+      moneyOwed(key)(PMtable[0]) = PMtable[1]
       cashflow = input("enter players and BUY-IN separated by ':' ")
   
