@@ -4,6 +4,9 @@ for i in array:
   for y in i:
     print(y, end = " ")
     
+array2 = [2, 4, 5, 7, 1, 0, 7, 4]
+loeest = array2[0]
+    
 name = "Tom"
 age = "50"
 print("My name is " + name + " I am " + age + " years old")
