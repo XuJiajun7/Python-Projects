@@ -2,11 +2,8 @@ import os
 import random
 #The client uses events to make it work
 import discord 
-
-class HashTable:
-  def __init__():
-    
-client = commands.Bot(command_prefix = "!") 
+ 
+client = commands.Bot(command_prefix = ".") 
 
 @client.event #this registers an event
 async def on_ready():
@@ -18,12 +15,12 @@ async def on_message(message):
   if message.author == client.user:
     return
   if message.content.startswith("$hello"):
-    if message.author.id == 6335:
+    if message.author.id == 207251811504095232:
       await message.channel.send("hi jun!")
     else:
       await message.channel.send("hello")
-  if message.content.startswith("$play"):
-    rand = random.randint(0, 20)
+  if message.content.startswith("$num"):
+    rand = random.randint(0, 100)
     await message.channel.send(rand)
     #if the message is 'play' then print a random number
     
