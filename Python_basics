@@ -6,6 +6,10 @@ for i in array:
     
 array2 = [2, 4, 5, 7, 1, 0, 7, 4]
 loeest = array2[0]
+for i in array_2:
+  if array_2[i] < loeest:
+    loeest = array_2[i]
+print("lowest number is " + str(loeest)+ "\n")
 
 array_3 = [2, 2, 5, 5, 5, 7, 8, 8, 8, 8, 9, 9, 10]
     
