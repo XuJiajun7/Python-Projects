@@ -43,4 +43,6 @@ while cashflow != "":
       PMtable = cashflow.split(":")
       moneyOwed(key)(PMtable[0]) = PMtable[1]
       cashflow = input("enter players and BUY-IN separated by ':' ")
+print(*moneyOwed.items(), sep = "\n") 
+
   
