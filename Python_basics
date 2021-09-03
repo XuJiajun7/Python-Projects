@@ -45,4 +45,6 @@ while cashflow != "":
       cashflow = input("enter players and BUY-IN separated by ':' ")
 print(*moneyOwed.items(), sep = "\n") 
 
+print("this is a placeholder")
+
   
